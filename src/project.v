@@ -16,12 +16,23 @@ module tt_um_example (
     input  wire       rst_n     // reset_n - low to reset 
 );
 
-  // All output pins must be assigned. If not used, assign to 0.
+    reg [15:0] counter;
+    
+    always @(posedge clk or negedge rst_n)
+        begin
+            if (rst_n == 1'b0)
+                counter <= 16'b0;
+            else
+                counter <= counter + ui_in;
+        end
+
+    assign uo_out = counter[15:8];
+
   assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
   assign uio_out = 0;
   assign uio_oe  = 0;
 
   // List all unused inputs to prevent warnings
-  wire _unused = &{ena, clk, rst_n, 1'b0};
+  wire _unused = &{ena, 1'b0};
 
 endmodule
