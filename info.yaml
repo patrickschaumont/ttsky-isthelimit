@@ -3,7 +3,7 @@ project:
   title:        "SKY is no limit"      # Project title
   author:       "rocketman"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  description:  "This project accumulates input bytes and returns the sum divided by 256"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     10000000       # Clock frequency in Hz (or 0 if not applicable)
 
