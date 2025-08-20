@@ -9,12 +9,13 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Add a clock, a value to ui_in, and watch the output ui_out. 
+Grab a coffee and wait. Watch ui_out increment.
 
 ## How to test
 
-Explain how to use your project
+Grab a coffee and wait. Watch ui_out increment.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+None.
